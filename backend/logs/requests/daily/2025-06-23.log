@@ -1,0 +1,90 @@
+info: ::1 - - [23/Jun/2025:09:27:44 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 401 27 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:27:45 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 401 27 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:28:00 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 401 27 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:28:00 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 401 27 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::ffff:127.0.0.1 - - [23/Jun/2025:09:32:21 +0000] "GET /instaFinn/ HTTP/1.1" 200 9 "-" "Thunder Client (https://www.thunderclient.com)"
+
+info: ::ffff:127.0.0.1 - - [23/Jun/2025:09:43:20 +0000] "POST /instaFinn/users/ HTTP/1.1" 201 537 "-" "Thunder Client (https://www.thunderclient.com)"
+
+info: ::1 - - [23/Jun/2025:09:43:52 +0000] "POST /instaFinn/users/otp/send HTTP/1.1" 200 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:44:15 +0000] "POST /instaFinn/users/login HTTP/1.1" 200 566 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:44:19 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 200 409 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:44:19 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:57:24 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:57:24 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:57:45 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:57:45 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:58:08 +0000] "POST /instaFinn/users/otp/send HTTP/1.1" 200 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:58:24 +0000] "POST /instaFinn/users/login HTTP/1.1" 200 566 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:58:26 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:58:26 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:59:18 +0000] "POST /instaFinn/users/otp/send HTTP/1.1" 200 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:59:33 +0000] "POST /instaFinn/users/login HTTP/1.1" 200 566 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:59:34 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:09:59:34 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:02:43 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:02:43 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:03:16 +0000] "GET /instaFinn/loans/masterAdmin/685921b8acd322324cd71805 HTTP/1.1" 200 102 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:03:17 +0000] "GET /instaFinn/loans/masterAdmin/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:03:45 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 200 348 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:03:45 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:04:33 +0000] "GET /instaFinn/loans/masterAdmin/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:04:34 +0000] "GET /instaFinn/loans/masterAdmin/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:04:35 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:04:36 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:19:26 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:20:03 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:28:53 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 200 409 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:28:53 +0000] "GET /instaFinn/other/applicationStatus HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:29:08 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:29:08 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:31:43 +0000] "POST /instaFinn/users HTTP/1.1" 201 546 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:31:45 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 200 357 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:31:45 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:32:28 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:32:28 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:33:12 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/Jun/2025:10:35:33 +0000] "GET /instaFinn/users/below/685921b8acd322324cd71805 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+

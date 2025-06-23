@@ -1,67 +1,96 @@
-import HttpStatus from 'http-status-codes';
-import * as UserService from '../services/user.service';
+// src/controllers/user.controller.js
+import {
+    getAllUsers as getAllUsersService,
+    getUserById as getUserByIdService,
+    createUser as createUserService,
+    updateUser as updateUserService,
+    deleteUser as deleteUserService,
+    verifyOTP as verifyOTPService,
+    sendOTP as sendOTPService,
+    resendOTP as resendOTPService,
+} from '../services/user.service';
 
-export const getAllUsers = async (req, res, next) => {
-  try {
-    const data = await UserService.getAllUsers();
-    res.status(HttpStatus.OK).json({
-      code: HttpStatus.OK,
-      data: data,
-      message: 'All users fetched successfully'
-    });
-  } catch (error) {
-    next(error);
-  }
+// Get all users
+export const getAllUsers = async (req, res) => {
+    try {
+        const users = await getAllUsersService(req.params.id);
+        res.status(200).json(users);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
 };
 
-export const getUser = async (req, res, next) => {
-  try {
-    const data = await UserService.getUser(req.params._id);
-    res.status(HttpStatus.OK).json({
-      code: HttpStatus.OK,
-      data: data,
-      message: 'User fetched successfully'
-    });
-  } catch (error) {
-    next(error);
-  }
+// Get user by ID
+export const getUserById = async (req, res) => {
+    try {
+        const user = await getUserByIdService(req.params.id);
+        res.status(200).json(user);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
 };
 
-export const newUser = async (req, res, next) => {
-  try {
-    const data = await UserService.newUser(req.body);
-    res.status(HttpStatus.CREATED).json({
-      code: HttpStatus.CREATED,
-      data: data,
-      message: 'User created successfully'
-    });
-  } catch (error) {
-    next(error);
-  }
+//  Login Controller (OTP Based)
+export const loginController = async (req, res) => {
+    const { mobileNumber, otp } = req.body;
+
+    try {
+        const {user, token} = await verifyOTPService(mobileNumber, otp);
+        res.status(200).json({ message: 'Login successful', token, user });
+
+    } catch (error) {
+        res.status(401).json({ message: error.message }); //  Use 401 for authentication errors
+    }
+};
+// Controller for sending OTP
+export const sendOTPController = async (req, res) => {
+    const { mobileNumber,otp } = req.body;
+
+    try {
+        const { otp, mobileNumber: userMobileNumber } = await sendOTPService(mobileNumber);
+        res.status(200).json({ message: 'OTP sent successfully', mobileNumber: userMobileNumber, otp: otp }); //  IMPORTANT:  Do NOT send the OTP back in the response in a real application
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
 };
 
-export const updateUser = async (req, res, next) => {
-  try {
-    const data = await UserService.updateUser(req.params._id, req.body);
-    res.status(HttpStatus.ACCEPTED).json({
-      code: HttpStatus.ACCEPTED,
-      data: data,
-      message: 'User updated successfully'
-    });
-  } catch (error) {
-    next(error);
-  }
+// Controller for resending OTP
+export const resendOTPController = async (req, res) => {
+    const { mobileNumber } = req.body;
+    try {
+        const { otp, mobileNumber: userMobileNumber } = await sendOTPService(mobileNumber);
+         res.status(200).json({ message: 'OTP resent successfully', mobileNumber: userMobileNumber,otp: otp }); //  IMPORTANT:  Do NOT send the OTP back in the response in a real application
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
 };
 
-export const deleteUser = async (req, res, next) => {
-  try {
-    await UserService.deleteUser(req.params._id);
-    res.status(HttpStatus.OK).json({
-      code: HttpStatus.OK,
-      data: [],
-      message: 'User deleted successfully'
-    });
-  } catch (error) {
-    next(error);
-  }
+// Create a new user
+export const createUser = async (req, res) => {
+    try {
+        const { user, token } = await createUserService(req.body);
+        res.status(201).json({ user, token });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
+
+// Update user by ID
+export const updateUser = async (req, res) => {
+    try {
+        const updatedUser = await updateUserService(req.params.id, req.body);
+        res.status(200).json(updatedUser);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+};
+
+// Delete user by ID
+export const deleteUser = async (req, res) => {
+    try {
+        const result = await deleteUserService(req.params.id);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
 };

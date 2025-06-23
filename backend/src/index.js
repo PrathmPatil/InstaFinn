@@ -5,6 +5,7 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 
+import routes from './routes';
 import database from './config/database';
 import {
   appErrorHandler,
@@ -14,9 +15,6 @@ import {
 import logger, { logStream } from './config/logger';
 
 import morgan from 'morgan';
-import user_router from './routes/user.route';
-import loan_router from './routes/loan.route';
-import routes from './routes';
 
 const app = express();
 const host = process.env.APP_HOST;
@@ -30,17 +28,22 @@ app.use(express.json());
 app.use(morgan('combined', { stream: logStream }));
 
 database();
-app.use('/user', user_router);
-app.use('/loan', loan_router);
-app.use('', routes);
 
+// At the end of your middleware stack
+app.use((err, req, res, next) => {
+  console.error('Unhandled error:', err.stack);
+  if (!res.headersSent) {
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
 
+app.use(`/instaFinn`, routes());
 app.use(appErrorHandler);
 app.use(genericErrorHandler);
 app.use(notFound);
 
 app.listen(port, () => {
-  logger.info(`Server started at ${host}:${port}/api/${api_version}/`);
+  logger.info(`Server started at ${host}:${port}/instaFinn/`);
 });
 
 export default app;
